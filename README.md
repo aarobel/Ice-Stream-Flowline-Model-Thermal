@@ -1,9 +1,6 @@
 # Ice-Stream-Flowline-Model-Simple
 
-# This is a numerical implementation of the flowline model described in Robel et al., JGR, 2014 for MATLAB. It solves for ice thickness,
-# grounding line position, velocity, till void ratio, unfrozen till thickness and ice temperature, given a bed topography (defined in
-# Base.m and dBasedx.m), and other parameters. You can find a detailed mathematical description of the numerics in Robel et al., JGR,
-# 2014. 
+# This is a numerical implementation of the flowline model described in Robel et al., JGR, 2014 for MATLAB. It solves for ice thickness, grounding line position, velocity, till void ratio, unfrozen till thickness and ice temperature, given a bed topography (defined in Base.m and dBasedx.m), and other parameters. You can find a detailed mathematical description of the numerics in Robel et al., JGR, 2014. 
 
 # Plug and play instructions:
 # The code runs in MATLAB, and should work simply by running the driver file, which is called Flowline_init.m. The first few code blocks in the driver file will set parameters and model configuration, pre-allocate storage for saving output and initialize variables before beginning forward integration of the model itself. All the model parameters and settings are stored in the "parameters" structure (with the syntax parameters.name). The most commonly changed parameters and model settings are set in Flowline_init.m, and the rest are all set in setparams_init.m.
